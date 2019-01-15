@@ -1,0 +1,7 @@
+Analytics between CRF and Logistic Regression
+
+CRF will work better for the sequence tagging problem.
+
+CRF is a sequence tagging model, which condifer inter-dependencies bwtween labels to find the best(suitable) tag sequence for the given sentence.
+
+Logistic Regerssion is not a sequence tagging model, it just makes an independent prediction for each word. But for the whole sentence, the combined tagging sequence may make no sense or not the best one. Because it does not take iner-dependencies into account.

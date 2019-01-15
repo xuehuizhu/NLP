@@ -1,0 +1,28 @@
+pseudocode:
+
+set array T[N][L] as the result table, and each value in T[x][y] = [score, tag]
+y = [] prints out the best sequence
+
+for i = 0:
+   for j from 0 to L-1:
+	T[0][j][0] = start_scores[j] + emission_scores[0][j]
+	T[0][j][1] = -1
+
+for i from 1 to N-1:
+   for j from 0 to L-1:	
+	for x from 0 to L-1:
+	    max_value = max{T[i-1][x][0]+tans_scores[x][j]+emission_score[i][j]}
+	    tag = j of max_value
+	T[i][j][0] = max_value
+	T[i][j][1] = tag
+
+for j from 0 to L-1:
+    score = max{T[N-1][j][0]+end_scores[j]}
+    final_tag = j of score
+
+for i from N-1 to 0:
+    y.append(final_tag)
+    final_tag = V[i][final_tag][1]
+
+return (score, y)
+

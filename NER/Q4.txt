@@ -1,0 +1,19 @@
+1.2 Implementation of additional features 
+
+Based on dev:
+Token-wise F1 (macro) improved from orignal 21.5780375334 to 24.5561489574
+Other parameters of the result are slightly improved.
+
+In Conlleavl:
+FB1 improved from original 25.20 to 31.31. recall improved from 16.89% to 22.79%. accuracy is slightly improved by 0.3%
+——————————————————————————————————————————————————————————————————————————————————————————
+Based on dev_test:
+Token-wise F1 (macro) improved from 10.9195384447 to 15.599338824.
+Other parameters of the result are slightly improved by around 0.5%
+
+In Conlleavl:
+FB1 improved from 13.51 to 20.44. reall improved from 8.54% to 13.66%. accuracy is slightly improved by 0.6%
+
+
+
+

@@ -1,0 +1,96 @@
+ 3.2 Experiments
+
+(1) the logistic regression and the CRF taggers to each other with the basic feature
+Based on dev:
+a. Logistic Regression:
+Token-wise accuracy 95.5361012395
+Token-wise F1 (macro) 21.5780375334
+Token-wise F1 (micro) 95.5361012395
+Sentence-wise accuracy 66.6101694915
+
+Conlleavl:
+processed 11537 tokens with 373 phrases; found: 127 phrases; correct: 63.
+accuracy:  95.54%; precision:  49.61%; recall:  16.89%; FB1:  25.20
+————————————————————————————————————————————————————————————————————————————————————
+b. CRF:
+Token-wise accuracy 95.7701308832
+Token-wise F1 (macro) 29.5648858833
+Token-wise F1 (micro) 95.7701308832
+Sentence-wise accuracy 68.6440677966
+
+Conlleavl:
+processed 11537 tokens with 373 phrases; found: 165 phrases; correct: 100.
+accuracy:  95.77%; precision:  60.61%; recall:  26.81%; FB1:  37.17
+————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————————————————
+
+Based on dev-test:
+a. Logistic Regression:
+Token-wise accuracy 91.0152104705
+Token-wise F1 (macro) 10.9195384447
+Token-wise F1 (micro) 91.0152104705
+Sentence-wise accuracy 48.6486486486
+ 
+Conlleavl:
+processed 11308 tokens with 644 phrases; found: 170 phrases; correct: 55.
+accuracy:  91.02%; precision:  32.35%; recall:   8.54%; FB1:  13.51
+————————————————————————————————————————————————————————————————————————————————————
+b. CRF
+Token-wise accuracy 91.3070392642
+Token-wise F1 (macro) 17.9817691763
+Token-wise F1 (micro) 91.3070392642
+Sentence-wise accuracy 50.4978662873
+
+Conlleavl:
+processed 11308 tokens with 644 phrases; found: 220 phrases; correct: 103.
+accuracy:  91.31%; precision:  46.82%; recall:  15.99%; FB1:  23.84
+
+
+
+
+(2) compare the two models again with your enhanced set(s) of features
+Based on dev:
+a. Logistic Regression:
+Token-wise accuracy 95.8221374707
+Token-wise F1 (macro) 24.5561489574
+Token-wise F1 (micro) 95.8221374707
+Sentence-wise accuracy 67.1186440678
+
+Conlleavl:
+processed 11537 tokens with 373 phrases; found: 170 phrases; correct: 85.
+accuracy:  95.82%; precision:  50.00%; recall:  22.79%; FB1:  31.31
+————————————————————————————————————————————————————————————————————————————————————         
+b. CRF
+Token-wise accuracy 96.1601802895
+Token-wise F1 (macro) 31.1923370622
+Token-wise F1 (micro) 96.1601802895
+Sentence-wise accuracy 68.813559322
+
+Conlleavl:
+processed 11537 tokens with 373 phrases; found: 191 phrases; correct: 122.
+accuracy:  96.16%; precision:  63.87%; recall:  32.71%; FB1:  43.26
+————————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————————————————
+Based on dev_test:
+a. Logistic Regression:
+Token-wise accuracy 91.598868058
+Token-wise F1 (macro) 15.599338824
+Token-wise F1 (micro) 91.598868058
+Sentence-wise accuracy 49.5021337127
+
+Conlleavl:
+processed 11308 tokens with 644 phrases; found: 217 phrases; correct: 88.
+accuracy:  91.60%; precision:  40.55%; recall:  13.66%; FB1:  20.44
+————————————————————————————————————————————————————————————————————————————————————
+b. CRF
+Token-wise accuracy 91.8906968518
+Token-wise F1 (macro) 21.2733953288
+Token-wise F1 (micro) 91.8906968518
+Sentence-wise accuracy 51.493598862
+
+Conlleavl:
+processed 11308 tokens with 644 phrases; found: 261 phrases; correct: 137.
+accuracy:  91.89%; precision:  52.49%; recall:  21.27%; FB1:  30.28
+
+
+    

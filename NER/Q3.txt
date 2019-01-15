@@ -1,0 +1,8 @@
+Q3:
+
+I added 6 lists(dictionaries) as global varaibls in preprocess_corpus().
+I read in lexicon/firstname.5k as first_name list.
+I read in and combined outputs of lastname.5000, people.family_name and people.person.lastnames. The result was stored in last_name list.
+I read in cap.1000, lower.5000 and english.stop files as the same way.
+
+What I chose are all single-word files. Based on the idea that one word is either in one particular list or not, the additional lists will help on dev.
