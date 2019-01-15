@@ -1,0 +1,13 @@
+Besides the "bug feature", I came up with several features which could improve the accurancy well.
+
+1. The length of text. I saw that the length of each line from B is seemlingly shorter than what of S on average.
+
+2. I calculated the syllables number of every word. And I weighed them with increasing value.
+
+3 I calculated the length of each word in a line and also weighted them with increasing value which corresponds to their location. In such way, I can better highlight differences bwtween lines from two authors.
+
+4. I keep morphy() as a feature.
+
+5. I used n gram on text and word_token list
+
+6. I weighted each word in a line by calculating the position where they are(ie. how many before and after a certain word in a line)
